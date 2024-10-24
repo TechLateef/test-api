@@ -1,0 +1,26 @@
+{
+  "name": "testbase-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/node-cron": "^3.0.11",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "moment-timezone": "^0.5.46",
+    "mongoose": "^8.7.2",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
