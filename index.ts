@@ -1,7 +1,8 @@
 import * as  express from "express";
 import { AssignmentService } from "./services/assignment.service";
 import { AssignmentController } from "./controllers/assignment.controller";
-
+// import { config } from "dotenv";
+import 'dotenv/config'
 const app = express();
 
 // Initialize the services and controllers
@@ -10,6 +11,10 @@ const assignmentController = new AssignmentController(assignmentService); // Thi
 
 // Use JSON middleware
 app.use(express.json());
+
+//Set Up Database
+import './configs/db'
+
 
 // Start your server
 const PORT = process.env.PORT || 5000;
